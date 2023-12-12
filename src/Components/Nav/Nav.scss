@@ -1,0 +1,63 @@
+.Nav{
+    background-color:#0c6d70e5;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem 5rem;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+ 
+    cursor: pointer;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+  
+  
+    gap: 60px;
+    .Routes{
+        display: flex;
+        list-style: none;
+        gap: 50px;
+    }
+    .Registering{
+        display: flex;
+        gap: 15px;
+    }
+}
+.Nav_link.active{
+    // border-bottom: 2px solid  #0c4f70fd;
+width: auto;
+color: beige;
+}
+.Nav_link{
+    color: black;
+}
+// .Main_logo{
+//     width: 100px;
+// }
+.Nav_icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   
+}
+.Main_logo{
+    width:200px;
+}
+@media only screen and (max-width: 767px) {
+    .Main_logo{
+        width:80px;
+    }
+}
+.BarIcon{
+    font-size: 1.5rem;
+}

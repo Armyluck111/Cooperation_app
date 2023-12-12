@@ -1,0 +1,33 @@
+.Main_img{
+   height: 34rem;
+   position: relative;
+   
+}
+// .Main_Section{
+//     position: relative;
+// }
+.VolButton{
+position: absolute;
+left: 3rem;
+bottom: 10rem;
+color: black !important;
+
+font-size: 1.2rem !important;
+button{
+   padding:0.7rem 2rem;
+}
+}
+@media only screen and (max-width: 767px) {
+   .Main_img{
+      height: auto;
+      width: 100%;
+   }
+   .VolButton{
+      bottom: 20rem;
+      left: 2rem;
+   }
+}
+  
+   
+    
+  

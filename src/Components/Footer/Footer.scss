@@ -1,0 +1,108 @@
+.Footer{
+    // height: auto;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.813);
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    gap: 35px;
+    .lineDiv{
+        height: 40vh;
+        background-color:gray ;
+        width: 0.5px;
+    }
+    .FooterImg{
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: center;
+        .Footer_Img{
+            width: 250px;
+            border-radius: 50%;
+        }
+    }
+    .Info{
+        width: 25%;
+       
+        h1{
+            color: whitesmoke;
+            font-size: 1.2rem;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        align-items: baseline;
+        gap: 30px;
+    }
+   
+}
+.AboutUs{
+    
+    h1{
+        color: whitesmoke;
+        font-size: 1.2rem;
+    }
+    p{
+        color: rgb(128, 128, 128);
+        font-size: 1rem;
+    }
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 2rem ;
+
+  
+
+}
+.FooterIcons{
+    font-size: 1.5rem;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.InfoIcon{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+    gap: 10px;
+      p{
+        color: rgb(128, 128, 128);
+        font-size: 1rem;
+    }
+ .InfoIcon{
+    color: whitesmoke;
+ }
+  
+}
+@media only screen and (max-width: 992px) {
+    .Footer_Img{
+      display: none;
+    }
+    .lineDiv{
+        display: none;
+    }
+    .Footer{
+        display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: start;
+        justify-content: start;
+        align-items: start;
+    }
+}
