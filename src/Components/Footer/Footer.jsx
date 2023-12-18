@@ -22,9 +22,9 @@ export default function Footer() {
           المطاعم والجمعيات الخيرية.
         </p>
         <div className="col-12 FooterIcons">
-          <FontAwesomeIcon icon={faXTwitter} style={{ color: "black" }} />
-          <FontAwesomeIcon icon={faLinkedin} style={{ color: "blue" }} />
-          <FontAwesomeIcon icon={faWhatsapp} style={{ color: "green" }} />
+          <FontAwesomeIcon icon={faXTwitter} style={{ color: "black" }} className="AboutIcon" />
+          <FontAwesomeIcon icon={faLinkedin} style={{ color: "blue" }} className="AboutIcon"/>
+          <FontAwesomeIcon icon={faWhatsapp} style={{ color: "green" }} className="AboutIcon"/>
         </div>
       </div>
       <div className="lineDiv"></div>

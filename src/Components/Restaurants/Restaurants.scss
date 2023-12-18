@@ -1,0 +1,36 @@
+.Restaurants {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  cursor: pointer;
+}
+
+.Restaurant {
+  img {
+    border-radius: 10px;
+    width: 300px;
+  }
+}
+.Restaurant:hover {
+  scale: 1.1;
+  transition: ease all 500ms;
+}
+.ResImg {
+  height: 200px;
+}
+.content_restaurant {
+  background-color: #0c4f70fd;
+  color: white;
+  padding: 2rem 2rem;
+  text-align: center;
+  border-radius: 5rem;
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}

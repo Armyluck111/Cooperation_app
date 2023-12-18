@@ -29,7 +29,13 @@
     text-align: center;
     gap: 10px;
     font-size: 1.5rem;
+    box-shadow: 5px 5px 20px rgb(49, 39, 39)
     
+}
+.StatisticDiv:hover{
+    scale: 1.1;
+
+    transition: all ease 500ms;
 }
 .allSstatistics{
     display: flex;

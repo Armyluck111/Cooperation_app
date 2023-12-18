@@ -40,7 +40,7 @@ const[sidemenue,setsidemenue]=useRecoilState($SideMenueIndex)
           <div className="Routes">
             <div className="Nav_icon">
               {" "}
-              <FontAwesomeIcon icon={faHouse} />
+              {/* <FontAwesomeIcon icon={faHouse} /> */}
               <NavLink
                 to="/"
                 style={{ textDecoration: "none" }}
@@ -50,7 +50,7 @@ const[sidemenue,setsidemenue]=useRecoilState($SideMenueIndex)
               </NavLink>
             </div>
             <div className="Nav_icon">
-              <FontAwesomeIcon icon={faHandHoldingHeart} />
+              {/* <FontAwesomeIcon icon={faHandHoldingHeart} /> */}
               <NavLink
                 to="/services"
                 style={{ textDecoration: "none" }}
@@ -60,7 +60,7 @@ const[sidemenue,setsidemenue]=useRecoilState($SideMenueIndex)
               </NavLink>
             </div>
             <div className="Nav_icon">
-              <FontAwesomeIcon icon={faQuestion} />
+              {/* <FontAwesomeIcon icon={faQuestion} /> */}
               <NavLink
                 to="/FAQ"
                 style={{ textDecoration: "none" }}
@@ -70,20 +70,20 @@ const[sidemenue,setsidemenue]=useRecoilState($SideMenueIndex)
               </NavLink>
             </div>
             <div className="Nav_icon">
-              <FontAwesomeIcon icon={faPhone} />
+              {/* <FontAwesomeIcon icon={faPhone} /> */}
               <NavLink
                 to="/contact"
                 style={{ textDecoration: "none" }}
                 className="Nav_link"
               >
                 {" "}
-                اتصل بنا
+               تواصل معنا
               </NavLink>
             </div>
           </div>
           <div className="Registering">
             <div className="Nav_icon">
-              <FontAwesomeIcon icon={faLock} />
+              {/* <FontAwesomeIcon icon={faLock} /> */}
               <NavLink
                 to="/login"
                 style={{ textDecoration: "none" }}
@@ -94,7 +94,7 @@ const[sidemenue,setsidemenue]=useRecoilState($SideMenueIndex)
             </div>
 
             <div className="Nav_icon">
-              <FontAwesomeIcon icon={faUser} />
+              {/* <FontAwesomeIcon icon={faUser} /> */}
               <NavLink
                 to="/register"
                 style={{ textDecoration: "none" }}

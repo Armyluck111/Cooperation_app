@@ -1,0 +1,39 @@
+.ContactUs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 2rem;
+}
+.ContactInfo {
+  background-color: rgba(0, 0, 0, 0.724);
+  margin-top: 3rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+
+  box-shadow: 10 10 20px rgba(0, 0, 0, 0.5);
+  .label {
+    color: white;
+    span {
+      color: red;
+    }
+  }
+  input {
+    padding: 1rem;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+  }
+  textarea {
+    padding: 1rem;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+  }
+}

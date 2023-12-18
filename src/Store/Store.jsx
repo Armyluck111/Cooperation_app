@@ -13,3 +13,9 @@ export const $SideMenueIndex=atom({
     key:"$SideMenueIndex",
     default:false,
 })
+
+
+export const $Answer=atom({
+    key:"$Answer",
+    default:false,
+})

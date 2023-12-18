@@ -1,5 +1,5 @@
 .Nav{
-    background-color:#0c6d70e5;
+    background-color:#0c6d70ea;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -10,7 +10,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
  
     cursor: pointer;
     // position: absolute;
@@ -23,6 +24,7 @@
         display: flex;
         list-style: none;
         gap: 50px;
+     
     }
     .Registering{
         display: flex;
@@ -32,10 +34,10 @@
 .Nav_link.active{
     // border-bottom: 2px solid  #0c4f70fd;
 width: auto;
-color: beige;
+color: black;
 }
 .Nav_link{
-    color: black;
+color:whitesmoke;
 }
 // .Main_logo{
 //     width: 100px;

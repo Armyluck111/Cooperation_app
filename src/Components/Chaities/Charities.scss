@@ -1,0 +1,32 @@
+.Carities{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    
+}
+.charity{
+  img{
+    border-radius: 10px;
+  }
+}
+.charity:hover{
+    scale: 1.1;
+    transition: ease all 500ms;
+}
+.content_charity{
+    background-color: #0c4f70fd;
+    color: white;
+    padding: 2rem 2rem;
+    text-align: center;
+    border-radius: 5rem;
+    h2{
+        font-size: 1.3rem;
+    }
+}
+
+

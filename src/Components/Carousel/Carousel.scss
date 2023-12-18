@@ -1,0 +1,17 @@
+.Main_carousel{
+    cursor: pointer;
+    height: 500px;
+  margin-top: 1rem;
+  z-index: 100;
+
+}
+// .swiper-button-prev,.swiper-button-next{
+//     border: 1px solid black;
+//     height: 30px !important;
+//     width: 30px !important;
+//     border-radius: 50%;
+// }
+.swiper-button-prev::after,.swiper-button-next::after{
+font-size: 35px !important;
+color: #0c6d70ea;
+}

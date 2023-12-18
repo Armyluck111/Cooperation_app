@@ -1,17 +1,15 @@
- @import url("https://fonts.googleapis.com/css2?family=Gantari:wght@100;200;300;400;500;600;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* @import url('https://fonts.googleapis.com/css2?family=Amiri&family=El+Messiri:wght@500&family=Whisper&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@600&display=swap');
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  /* font-family: "Archivo", sans-serif;  */
-  /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Raleway', sans-serif;
- /* font-family: 'Poppins', sans-serif; */ 
+  /* font-family: 'Reem Kufi', sans-serif; */
+  /* font-family: 'El Messiri', sans-serif; */
+  /* font-family: 'Noto Nastaliq Urdu', serif; */
+  font-family: 'Scheherazade New', serif;
 }
 
 html {
@@ -38,6 +36,7 @@ body {
   align-items: flex-start;
   align-content: flex-start;
   justify-content: flex-start;
+
   #root,
   .App {
     min-height: 100vh;
