@@ -89,7 +89,7 @@ const[sidemenue,setsidemenue]=useRecoilState($SideMenueIndex)
                 style={{ textDecoration: "none" }}
                 className="Nav_link"
               >
-                الدخول
+                تسجيل الدخول
               </NavLink>
             </div>
 
@@ -100,12 +100,14 @@ const[sidemenue,setsidemenue]=useRecoilState($SideMenueIndex)
                 style={{ textDecoration: "none" }}
                 className="Nav_link"
               >
-                التسجيل
+                إنشاء حساب جديد
               </NavLink>
             </div>
           </div>
         </div>
+        
       )}
+     
     
     </>
   );
