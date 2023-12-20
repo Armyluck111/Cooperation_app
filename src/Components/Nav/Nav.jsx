@@ -13,12 +13,17 @@ import "./Nav.scss";
 import { useRecoilState } from "recoil";
 import { $Current_width, $SideMenueIndex} from "../../Store/Store";
 import SideMenue from "../SideMenue/SideMenue";
+import { authData } from "../../states/atoms/authAtom";
+import LogoutButton from "../LogoutButton/LogoutButton";
+import { Fragment } from "react";
 export default function Nav() {
   const [currentWidth, setcurrentWidth] = useRecoilState($Current_width);
 const[sidemenue,setsidemenue]=useRecoilState($SideMenueIndex)
+const [auth] = useRecoilState(authData);
 
   return (
     <>
+    {}
       {currentWidth <= 767&&sidemenue==true? <SideMenue /> : null}
       {/*عملت شرط في المقاس الصغير يحط الناف كلها من غير اللينكات ويحط البار غير كده يحط الناف كلها عادي[] */}
       {currentWidth <= 767 ? (
@@ -100,7 +105,7 @@ const[sidemenue,setsidemenue]=useRecoilState($SideMenueIndex)
                 style={{ textDecoration: "none" }}
                 className="Nav_link"
               >
-                إنشاء حساب جديد
+                إنشاء حساب 
               </NavLink>
             </div>
           </div>
