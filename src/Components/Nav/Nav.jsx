@@ -23,7 +23,54 @@ const [auth] = useRecoilState(authData);
 
   return (
     <>
-    {}
+    {auth.isAuth ?( <div className="col-12 Nav">
+          <img src="./assets/Images/4.png" className="Main_logo col-1" />
+
+          <div className="Routes">
+            <div className="Nav_icon">
+              {" "}
+              {/* <FontAwesomeIcon icon={faHouse} /> */}
+              <NavLink
+                to="/"
+                style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+                الرئيسية
+              </NavLink>
+            </div>
+            <div className="Nav_icon">
+              {/* <FontAwesomeIcon icon={faHandHoldingHeart} /> */}
+              <NavLink
+                to="/services"
+                style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+                الجمعيات والمطاعم
+              </NavLink>
+            </div>
+            <div className="Nav_icon">
+              {/* <FontAwesomeIcon icon={faQuestion} /> */}
+              <NavLink
+                to="/FAQ"
+                style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+                الأسئلة الشائعة
+              </NavLink>
+            </div>
+            <div className="Nav_icon">
+              {/* <FontAwesomeIcon icon={faPhone} /> */}
+              <NavLink
+                to="/contact"
+                style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+                {" "}
+               تواصل معنا
+              </NavLink>
+            </div>
+            <LogoutButton />
+          </div>):()}
       {currentWidth <= 767&&sidemenue==true? <SideMenue /> : null}
       {/*عملت شرط في المقاس الصغير يحط الناف كلها من غير اللينكات ويحط البار غير كده يحط الناف كلها عادي[] */}
       {currentWidth <= 767 ? (
