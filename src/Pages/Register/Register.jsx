@@ -1,5 +1,5 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import "./Register.css";
+import "./Register.scss";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import registerSchema from '../../Schemas/registerSchema';
@@ -17,7 +17,8 @@ export default function Register() {
   }
 
   return (
-    <Formik
+    <div className="col-6 col-md-6 col-lg-12 registerForm">
+       <Formik
       initialValues={{
         name: "",
         email: "",
@@ -31,30 +32,30 @@ export default function Register() {
     >
       <Form className="user__form my-5" >
         <div className="d-flex flex-column gap-2 mb-3">
-          <label htmlFor="">الإسم كاملا<span>*</span></label>
-          <Field name="name" placeholder="ادخل الاسم كاملا.........." type="text" />
+          <label htmlFor="" className="label">الإسم كاملا<span>*</span></label>
+          <Field name="name" placeholder="ادخل الاسم كاملا.........." type="text" className="field" />
           <span className="text-danger"><ErrorMessage name="name"/></span>
         </div>
         <div className="d-flex flex-column gap-2 mb-3">
-        <label htmlFor="">البريد الإلكتروني<span>*</span></label>
-          <Field name="email" placeholder="ادخل البريد الإلكتروني" type="email" />
+        <label htmlFor="" className="label">البريد الإلكتروني<span>*</span></label>
+          <Field name="email" placeholder="ادخل البريد الإلكتروني" type="email"   className="field"/>
           <span className="text-danger"><ErrorMessage name="email"/></span>
         </div>
         <div className="d-flex flex-column gap-2 mb-3">
-        <label htmlFor="">كلمة السر<span>*</span></label>
-          <Field name="password" placeholder="ادخل كلمة السر" type="password" />
+        <label htmlFor="" className="label">كلمة السر<span>*</span></label>
+          <Field name="password" placeholder="ادخل كلمة السر" type="password" className="field"/>
           <span className="text-danger"><ErrorMessage name="password"/></span>
         </div>
         <div className="d-flex flex-column gap-2 mb-3">
-        <label htmlFor="">تأكيد كلمة السر<span>*</span></label>
+        <label htmlFor="" className="label">تأكيد كلمة السر<span>*</span></label>
           <Field
             name="confirmPassword"
             placeholder="ادخل كلمة السر مره اخري"
-            type="password"
+            type="password" className="field"
           />
           <span className="text-danger"><ErrorMessage name="confirmPassword"/></span>
         </div>
-        <div>
+        <div style={{color:"white"}}>
           هل لديك حساب بالفعل؟ <Link to="/login">تسجيل الدخول</Link>
         </div>
         <div className="d-flex justify-content-end">
@@ -64,5 +65,7 @@ export default function Register() {
         </div>
       </Form>
     </Formik>
+    </div>
+   
   );
 }

@@ -1,0 +1,33 @@
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 6rem;
+
+}
+.user__form{
+width: 600px;
+  border: 1px solid rgba(0 0 0 / .3);
+flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ box-shadow: 10 10 20px rgba(0, 0, 0, 0.5) !important;
+ .label {
+  color: white;
+  span {
+    color: red;
+  }
+}
+background-color: rgba(0, 0, 0, 0.724);
+ .field{
+  padding: 0.5rem 1rem;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+}
+}

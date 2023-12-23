@@ -12,9 +12,9 @@ export default function Carousel(){
     pagination={{clickable:true}}
     autoplay
      className="Main_carousel">  
-    <SwiperSlide><img className='w-100 h-100' src='/assets/Images/2.png'/></SwiperSlide>
+    <SwiperSlide><img className='w-100 h-100' src='/assets/Images/7.png'/></SwiperSlide>
     <SwiperSlide><img className='w-100 h-100' src='/assets/Images/3.png'/></SwiperSlide>
-    <SwiperSlide><img className='w-100 h-100' src='/assets/Images/4.png'/> </SwiperSlide>
+    <SwiperSlide><img className='w-100 h-100' src='/assets/Images/2.png'/> </SwiperSlide>
   </Swiper>
   )
 }

@@ -3,21 +3,21 @@ import * as yup from "yup";
 const registerSchema = yup.object().shape({
   name: yup
     .string()
-    .required("Name is required")
-    .min(3, "Name should be at least 3 characters"),
+    .required("يجب ادخال الإسم كاملا")
+    .min(3, "يجب أن يكون الإسم ثلاثي علي الأقب"),
   email: yup
     .string()
-    .required("Email is required")
-    .email("Email should be a valid email address"),
+    .required("يجب ادخال البريد الإلكتروني")
+    .email("يجب ادخال البريد الإلكتروني بطريقة صحيحة"),
   password: yup
     .string()
-    .required("Password is required")
-    .min(6, "Password should be at least 6 characters")
-    .max(30, "Password should be at most 30 characters"),
+    .required("يجب ادخال كلمة السر")
+    .min(6, "يجب ألا تقل كلمة السر عن ستة أحرف"),
+    
   confirmPassword: yup
     .string()
-    .required("Confirm Password is required")
-    .oneOf([yup.ref("password")], "Passwords do not match!"),
+    .required("يجب اعادة كلمة السر مره أخري")
+    .oneOf([yup.ref("password")], "كلمة السر غير مطابقة "),
 });
 
 export default registerSchema;

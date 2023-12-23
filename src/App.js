@@ -12,7 +12,7 @@ import ScrollToTopButton from "./Components/ScroollButton/ScrollToTopButton ";
 import {
   $CurrentLanguage,
   $Current_width,
-  $SideMenueIndex,
+  $SideMenueIndex
 } from "./Store/Store";
 import { useRecoilState } from "recoil";
 import IsLoggedIn from "./Components/ProtectedRoutes/IsLogedIn.jsx";
@@ -20,6 +20,7 @@ import NotLoggedIn from "./Components/ProtectedRoutes/NotLoggedIn.jsx";
 function App() {
   const [currentWidth, setcurrentWidth] = useRecoilState($Current_width);
   const [Sidemenue, setSidemenue] = useRecoilState($SideMenueIndex);
+  
   // لو الابلكيشن بتاعي فيه عربي وانجليزي بعمل ريكويل ستيت
   // const [currentLanguage,setCurrentLanguage]=useRecoilState($CurrentLanguage)
   // dir{currentLanguage=="english"?"ltr":rtl}
@@ -32,7 +33,7 @@ function App() {
       className="App"
       dir="rtl"
       onClick={() => {
-        setSidemenue(false);
+        setSidemenue(false)
       }}
     >
       <BrowserRouter>

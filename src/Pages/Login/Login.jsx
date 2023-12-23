@@ -1,5 +1,5 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import "./Login.css";
+import "./Login.scss";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import loginSchema from "../../Schemas/loginSchema";
@@ -23,13 +23,15 @@ export default function Login() {
           userId: data.data[0].id
         })
       } else {
-        console.log('Email or password not correct')
+       alert("خطأ في البريد الإلكتروني أو كلمة السر ")
+      
       }
     });
   }
 
   return (
-    <Formik
+    <div className="col-6 col-md-6 col-lg-12 loginForm">
+       <Formik
       initialValues={{
         email: "",
         password: "",
@@ -39,32 +41,34 @@ export default function Login() {
         handleLoginAccount(values);
       }}
     >
-      <Form className="user__form my-5">
+      <Form className="user__form">
         <div className="d-flex flex-column gap-2 mb-3">
         <label htmlFor="" className="label">
             البريد الإلكتروني <span>*</span>
           </label>
-          <Field name="email" placeholder="البريد الإلكتروني.........." type="email" />
+          <Field name="email" placeholder="البريد الإلكتروني.........." type="email" className="field" />
           <span className="text-danger">
             <ErrorMessage name="email" />
           </span>
         </div>
         <div className="d-flex flex-column gap-2 mb-3">
-          <label htmlFor="">كلمة السر<span>*</span></label>
-          <Field name="password" placeholder="ادخل كلمة السر.........." type="password" />
+          <label htmlFor="" className="label">كلمة السر<span>*</span></label>
+          <Field name="password" placeholder="ادخل كلمة السر" type="password" className="field"/>
           <span className="text-danger">
             <ErrorMessage name="password" />
           </span>
         </div>
-        <div>
-          Don't Have and account? <Link to="/register">Create new account</Link>
+        <div style={{color:"white"}}>
+          ليس لديك حساب ؟ <Link to="/register">انشيء حساب الآن</Link>
         </div>
         <div className="d-flex justify-content-end">
           <Button variant="primary" type="submit">
-            Login
+            تسجيل
           </Button>
         </div>
       </Form>
     </Formik>
+    </div>
+   
   );
 }

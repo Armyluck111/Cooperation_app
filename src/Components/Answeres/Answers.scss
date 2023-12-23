@@ -1,0 +1,18 @@
+.quesionWithIcon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: baseline;
+    cursor: pointer;
+
+}
+.QuestionIcon{
+    color: whitesmoke;
+   
+   
+}
+.Answer{
+    color: white;
+}
