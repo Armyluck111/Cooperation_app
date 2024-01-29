@@ -11,6 +11,9 @@ export default function FAQ() {
   return (
     <div className="FAQ col-12">
       <Nav />
+      <div className="col-11 Charity_Header " style={{marginTop:"5rem"}}>
+          <h1 className="col-12">مؤسسة غيث</h1>
+        </div>
       <div className="col-10 ContentFaq">
         
         <Answers

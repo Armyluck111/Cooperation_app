@@ -4,15 +4,16 @@ import Home from "./Pages/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Services from "./Pages/Services/Services";
 import FAQ from "./Pages/FAQ/FAQ";
+import VolAnyCharity from "./Pages/VolunteerAnyCharity/VolAnyCharity.jsx";
 import Contact from "./Pages/Contact_Us/Contact";
 import Register from "./Pages/Register/Register";
 import Login from "./Pages/Login/Login";
-import Nav from "./Components/Nav/Nav";
+import Nav from "./Components/Nav/Nav.jsx";
 import ScrollToTopButton from "./Components/ScroollButton/ScrollToTopButton ";
 import {
   $CurrentLanguage,
   $Current_width,
-  $SideMenueIndex
+  $SideMenueIndex,$Form
 } from "./Store/Store";
 import { useRecoilState } from "recoil";
 import IsLoggedIn from "./Components/ProtectedRoutes/IsLogedIn.jsx";
@@ -20,24 +21,34 @@ import NotLoggedIn from "./Components/ProtectedRoutes/NotLoggedIn.jsx";
 function App() {
   const [currentWidth, setcurrentWidth] = useRecoilState($Current_width);
   const [Sidemenue, setSidemenue] = useRecoilState($SideMenueIndex);
-  
+  const [form,setform]=useRecoilState($Form)
+  const app=document.querySelector(".App")
+  // const closeForm=function closeForm(){
+  //   setform(false)
+  // }
   // لو الابلكيشن بتاعي فيه عربي وانجليزي بعمل ريكويل ستيت
   // const [currentLanguage,setCurrentLanguage]=useRecoilState($CurrentLanguage)
   // dir{currentLanguage=="english"?"ltr":rtl}
-
+  // app.addEventListener('click',closeForm)
   window.addEventListener("resize", () => {
     setcurrentWidth(window.innerWidth);
   });
+
   return (
+    <>
+  
     <div
       className="App"
       dir="rtl"
       onClick={() => {
         setSidemenue(false)
       }}
+     
     >
+  
+    
       <BrowserRouter>
-        <Nav />
+    
         <Routes>
           <Route
             path="/"
@@ -60,6 +71,14 @@ function App() {
             element={
               <IsLoggedIn>
                 <FAQ />
+              </IsLoggedIn>
+            }
+          />
+           <Route
+            path="/VolAnyCharity"
+            element={
+              <IsLoggedIn>
+                <VolAnyCharity />
               </IsLoggedIn>
             }
           />
@@ -92,6 +111,7 @@ function App() {
       </BrowserRouter>
       <ScrollToTopButton />
     </div>
+    </>
   );
 }
 export default App;

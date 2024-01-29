@@ -1,14 +1,16 @@
 import "./Footer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
   faXTwitter,
   faLinkedin,
   faWhatsapp,
+  
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faLocationDot,
   faPhone,
-  faEnvelope,
+ 
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
@@ -22,9 +24,10 @@ export default function Footer() {
           المطاعم والجمعيات الخيرية.
         </p>
         <div className="col-12 FooterIcons">
-          <FontAwesomeIcon icon={faXTwitter} style={{ color: "black" }} className="AboutIcon" />
-          <FontAwesomeIcon icon={faLinkedin} style={{ color: "blue" }} className="AboutIcon"/>
-          <FontAwesomeIcon icon={faWhatsapp} style={{ color: "green" }} className="AboutIcon"/>
+          <a href="https://twitter.com/YourTwitterUsername"  target="_blank"><FontAwesomeIcon icon={faXTwitter} style={{ color: "black" }} className="AboutIcon" /></a>
+          <a href="https://www.linkedin.com/in/ahmed-adel-154b0a255"  target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{ color: "blue" }} className="AboutIcon"/></a>
+         <a href="https://wa.me/+201124367646?text=Hello%20from%20my%20website"  target="_blank"> <FontAwesomeIcon icon={faWhatsapp} style={{ color: "green" }} className="AboutIcon"/></a>
+         <a href="mailto:your.ahmedadel25828@gmail.com?subject=Subject%20of%20the%20email&body=Hello%20from%20my%20website" target="_blank"><FontAwesomeIcon icon={faEnvelope} className="AboutIcon" /></a>
         </div>
       </div>
       <div className="lineDiv"></div>

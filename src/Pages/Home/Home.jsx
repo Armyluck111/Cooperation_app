@@ -10,19 +10,21 @@ import Footer from "../../Components/Footer/Footer";
 import Carousel from "../../Components/Carousel/Carousel";
 export default function Home() {
   return (
-    <div className="Main_Section col-12">
-    <div className="col-12">
-<Nav/>
-<Carousel/>
-    </div>
-  
-      <div className="col-12 allSstatistics">
-        <Statistics Number="+٥" Title=" المطاعم المساهمة" />
-        <Statistics Number="+٨" Title="الجمعيات الخيرية المساهمة" />
-        <Statistics Number="+٨٩" Title="المتطوعين" />
-      </div>
+    <>
+      <Nav />
+      <div className="Main_Section col-12">
+        <div className="col-12">
+          <Carousel />
+        </div>
 
-      <Footer />
-    </div>
+        <div className="col-12 allSstatistics">
+          <Statistics Number="+٥" Title=" المطاعم المساهمة" />
+          <Statistics Number="+٨" Title="الجمعيات الخيرية المساهمة" />
+          <Statistics Number="+٨٩" Title="المتطوعين" />
+        </div>
+
+        <Footer />
+      </div>
+    </>
   );
 }

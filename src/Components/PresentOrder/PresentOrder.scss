@@ -5,10 +5,14 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    position: absolute;
+    border-radius: 10px;
+  
+  
   }
   .ContactInfo {
-    background-color: rgba(0, 0, 0, 0.724);
+    background-color:  rgba(12, 109, 112, 0.83) !important;
     margin-top: 3rem;
     padding: 1.5rem;
     display: flex;
@@ -16,6 +20,7 @@
     flex-direction: column;
     gap: 10px;
     border-radius: 10px;
+    position: relative;
   
     box-shadow: 10 10 20px rgba(0, 0, 0, 0.5);
     .label {
@@ -36,5 +41,13 @@
       border: 0;
       border-radius: 5px;
     }
+  }
+  .closeForm{
+    position: absolute;
+ cursor: pointer;
+    top: 0.7rem;
+    left:0.7rem;
+    font-size: 1.7rem;
+
   }
   

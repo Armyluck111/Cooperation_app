@@ -19,3 +19,8 @@ export const $Form=atom({
     default:false,
 })
 
+export const $VolunteerForm=atom({
+    key:"$VolunteerForm",
+    default:false,
+})
+

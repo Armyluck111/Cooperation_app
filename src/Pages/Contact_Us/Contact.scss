@@ -1,15 +1,16 @@
 .ContactUs {
   display: flex;
-  flex-direction: column;
+ flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  margin-top: 2rem;
+  gap: 100px;
+ 
+ 
 }
 .ContactInfo {
   background-color: rgba(0, 0, 0, 0.724);
-  margin-top: 3rem;
+ margin: 3rem;
   padding: 1.5rem;
   display: flex;
   flex-wrap: wrap;

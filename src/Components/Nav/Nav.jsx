@@ -82,6 +82,16 @@ export default function Nav() {
               </NavLink>
             </div>
             <div className="Nav_icon">
+              {/* <FontAwesomeIcon icon={faQuestion} /> */}
+              <NavLink
+                to="/VolAnyCharity"
+                style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+               تبرع الآن
+              </NavLink>
+            </div>
+            <div className="Nav_icon">
               {/* <FontAwesomeIcon icon={faPhone} /> */}
               <NavLink
                 to="/contact"

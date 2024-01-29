@@ -5,9 +5,14 @@ import Footer from "../../Components/Footer/Footer";
 export default function Contact() {
   return (
     <>
-      <Nav />
+     
+      
       <div className="ContactUs col-12">
-        <div className="col-5 ContactInfo">
+      <Nav />
+      <div className="col-11 Charity_Header " style={{margin:"0"}}>
+          <h1 className="col-12">مؤسسة غيث</h1>
+        </div>
+        <div className="col-5 ContactInfo" style={{margin:"0"}}>
           <label className="label">
             الإسم <span>*</span>
           </label>
