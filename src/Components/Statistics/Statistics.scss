@@ -1,48 +1,53 @@
-.circleDiv{
-    width: 100px;
-    height: 100px;
-    background-color: rgba(12, 79, 112, 0.9921568627);
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    font-size: 1.2rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7rem;
-
+.circleDiv {
+  width: 100px;
+  height: 100px;
+  background-color: #ac6327;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
 }
 
-.StatisticDiv{
-    margin-top: 2rem;
+.StatisticDiv {
+  margin-top: 2rem;
   padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    border: solid 0.1px rgba(12, 79, 112, 0.9921568627);
-    border-radius: 5px;
-    text-align: center;
-    gap: 10px;
-    font-size: 1.5rem;
-    box-shadow: 5px 5px 20px rgb(49, 39, 39)
-    
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.1px rgba(12, 79, 112, 0.9921568627);
+  border-radius: 5px;
+  text-align: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  box-shadow: 5px 5px 20px rgb(49, 39, 39);
 }
-.StatisticDiv:hover{
-    scale: 1.1;
+.presentButton{
+    color: #ac6327 !important;
+    border: 1px solid #f0cd87 !important;
+}
+.presentButton:hover{
+   background-color:#fae392  !important ;
+}
+.StatisticDiv:hover {
+  scale: 1.1;
 
-    transition: all ease 600ms;
+  transition: all ease 600ms;
 }
-.allSstatistics{
-    display: flex;
-    flex-direction: row ;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+.allSstatistics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }

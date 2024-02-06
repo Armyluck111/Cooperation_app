@@ -1,53 +1,49 @@
 .ContactUs {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin-top: 5rem;
-    position: absolute;
-    border-radius: 10px;
-  
-  
-  }
-  .ContactInfo {
-    background-color:  rgba(12, 109, 112, 0.83) !important;
-    margin-top: 3rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 10px;
-    position: relative;
-  
-    box-shadow: 10 10 20px rgba(0, 0, 0, 0.5);
-    .label {
-      color: white;
-      span {
-        color: red;
-      }
-    }
-    input {
-      padding: 1rem;
-      outline: 0;
-      border: 0;
-      border-radius: 5px;
-    }
-    textarea {
-      padding: 1rem;
-      outline: 0;
-      border: 0;
-      border-radius: 5px;
-    }
-  }
-  .closeForm{
-    position: absolute;
- cursor: pointer;
-    top: 0.7rem;
-    left:0.7rem;
-    font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 5rem;
+  position: absolute;
+  border-radius: 10px;
+}
+.ContactInfo {
+  // #9ac1f0
+  background-color: #f0cd87 !important;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  position: relative;
 
+  box-shadow: 10 10 20px rgba(0, 0, 0, 0.5);
+  .label {
+    color: white;
+    span {
+      color: red;
+    }
   }
-  
+}
+.closeForm {
+  position: absolute;
+  cursor: pointer;
+  top: 0.7rem;
+  left: 0.7rem;
+  font-size: 1.7rem;
+}
+.sendPresent {
+  background-color: gray !important;
+  border: 0 !important;
+}
+.presentField {
+  padding: 0.5rem 1rem !important;
+  border-radius: 10px !important;
+  border-bottom: gray 2px solid !important;
+  outline: 0 !important;
+  border: 0;
+}

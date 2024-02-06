@@ -31,6 +31,12 @@ export default function Login() {
 
   return (
     <div className="col-6 col-md-6 col-lg-12 loginForm">
+      <h1>مرحبًا بك في مؤسسة غيث !</h1>
+     
+      {/* <img src="./assets/Images/Login4.png" className="col-12 loginImg"/> */}
+    
+     
+       
        <Formik
       initialValues={{
         email: "",
@@ -41,7 +47,9 @@ export default function Login() {
         handleLoginAccount(values);
       }}
     >
+     
       <Form className="user__form">
+      <h3>سجل الدخول الآن</h3>
         <div className="d-flex flex-column gap-2 mb-3">
         <label htmlFor="" className="label">
             البريد الإلكتروني <span>*</span>
@@ -58,11 +66,11 @@ export default function Login() {
             <ErrorMessage name="password" />
           </span>
         </div>
-        <div style={{color:"white"}}>
-          ليس لديك حساب ؟ <Link to="/register">انشيء حساب الآن</Link>
+        <div style={{color:"#000000"}}>
+          ليس لديك حساب ؟ <Link to="/register" style={{color:"#1a5d1a"}}>انشيء حساب الآن</Link>
         </div>
         <div className="d-flex justify-content-end">
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" className="formButton">
             تسجيل
           </Button>
         </div>

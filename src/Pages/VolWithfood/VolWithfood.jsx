@@ -1,6 +1,6 @@
-import "./Contact.scss";
+import "./VolWithfood.scss";
 import Nav from "../../Components/Nav/Nav";
-import ContactUs from "../../Components/ContactUs/ContactUs";
+import VolFood from "../../Components/VolWithFood/VolFood";
 
 
 
@@ -12,7 +12,7 @@ export default function VolWithfood() {
         <div className="col-11 Charity_Header ">
           <h1 className="col-12">مؤسسة غيث</h1>
         </div>
-<ContactUs/>
+<VolFood/>
 
         
       </div>

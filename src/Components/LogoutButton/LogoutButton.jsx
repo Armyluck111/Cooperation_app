@@ -15,6 +15,6 @@ export default function LogoutButton() {
   }
 
   return (
-    <Button variant='primary' onClick={handleLogout}>تسجيل الخروج</Button>
+    <Button variant='primary' onClick={handleLogout} className='logoutButton' style={{backgroundColor:"gray",border:0}}>تسجيل الخروج</Button>
   )
 }

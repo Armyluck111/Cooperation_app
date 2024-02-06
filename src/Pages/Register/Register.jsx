@@ -18,6 +18,8 @@ export default function Register() {
 
   return (
     <div className="col-6 col-md-6 col-lg-12 registerForm">
+        <h1>مرحبًا بك في مؤسسة غيث !</h1>
+      {/* <img src="./assets/Images/Login4.png" className="col-12 loginImg"/> */}
        <Formik
       initialValues={{
         name: "",
@@ -30,7 +32,8 @@ export default function Register() {
         handleRegisterAccount(values)
       }}
     >
-      <Form className="user__form my-5" >
+      <Form className="user__form" >
+      <h3>سجل حساب جديد الآن</h3>
         <div className="d-flex flex-column gap-2 mb-3">
           <label htmlFor="" className="label">الإسم كاملا<span>*</span></label>
           <Field name="name" placeholder="ادخل الاسم كاملا.........." type="text" className="field" />
@@ -55,11 +58,11 @@ export default function Register() {
           />
           <span className="text-danger"><ErrorMessage name="confirmPassword"/></span>
         </div>
-        <div style={{color:"white"}}>
-          هل لديك حساب بالفعل؟ <Link to="/login">تسجيل الدخول</Link>
+        <div style={{color:"#000000"}}>
+          هل لديك حساب بالفعل؟ <Link to="/login" style={{color:"#1a5d1a"}}>تسجيل الدخول</Link>
         </div>
         <div className="d-flex justify-content-end">
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" className="formButton">
             تسجيل حساب جديد
           </Button>
         </div>

@@ -1,15 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@600&display=swap");
 
-/* @import url('https://fonts.googleapis.com/css2?family=Amiri&family=El+Messiri:wght@500&family=Whisper&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@600&display=swap');
 * {
   padding: 0;
   margin: 0;
-  /* font-family: 'Reem Kufi', sans-serif; */
-  /* font-family: 'El Messiri', sans-serif; */
-  /* font-family: 'Noto Nastaliq Urdu', serif; */
-  font-family: 'Scheherazade New', serif;
+  font-family: "Scheherazade New", serif;
 }
 
 html {
@@ -47,7 +41,7 @@ body {
     align-items: flex-start;
     align-content: flex-start;
     justify-content: flex-start;
-     /* @media screen and (max-width: 767px) {
+    /* @media screen and (max-width: 767px) {
        padding: 0 1rem;
      } */
   }

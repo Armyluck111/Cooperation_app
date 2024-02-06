@@ -1,33 +1,66 @@
-.registerForm{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    margin-top: 4rem;
-  
+.loginImg {
+  height: 100vh;
+  object-fit: fill;
+  background-position: 50%;
+  background-size: 100%;
+}
+.registerForm {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-content: center !important;
+  background-color: #fdf4d6 !important;
+  min-height: 100vh !important;
+  min-width: 100% !important;
+  h1 {
+    text-align: center !important;
+padding-top: 2rem;
+    color: #665656;
   }
-  .user__form{
+
+}
+.user__form {
+  margin-top: 3rem !important;
+
+  background-color: #fae392 !important;
+  h3 {
+    color: #1a5d1a;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
   width: 600px;
-    border: 1px solid rgba(0 0 0 / .3);
+  border: 0 !important;
   flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   box-shadow: 10 10 20px rgba(0, 0, 0, 0.5) !important;
-   .label {
-    color: white !important;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 10 10 20px rgba(0, 0, 0, 0.5) !important;
+  .label {
+    color: #1a5d1a !important;
     span {
-      color: red !important;
+      color: red;
+    }
+    .formButton {
+      background-color: #1a5d1a !important;
     }
   }
-  background-color: rgba(0, 0, 0, 0.724);
-   .field{
-    padding: 0.5rem 1rem;
-    outline: 0;
+
+  .field {
+    padding: 0.5rem 1rem !important;
+    border-radius: 10px !important;
+    border-bottom: #1a5d1a 2px solid !important;
+    outline: 0 !important;
     border: 0;
-    border-radius: 5px;
   }
-  }
+}
+.formButton {
+  background-color: #1a5d1a !important;
+  border: 0 !important;
+  color: #fae392 !important;
+  padding: 0.4rem 1.4rem !important;
+  font-size: 1.1rem !important;
+}

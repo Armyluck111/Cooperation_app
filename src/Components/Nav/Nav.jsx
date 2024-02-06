@@ -31,7 +31,7 @@ export default function Nav() {
       {/*عملت شرط في المقاس الصغير يحط الناف كلها من غير اللينكات ويحط البار غير كده يحط الناف كلها عادي[] */}
       {currentWidth <= 767 ? (
         <div className="col-12 Nav">
-          <img src="./assets/Images/4.png" className="Main_logo" />
+          <img src="./assets/images/4.png" className="Main_logo" />
           <div className="BarIconDiv col-3">
             {" "}
             <span
@@ -88,7 +88,27 @@ export default function Nav() {
                 style={{ textDecoration: "none" }}
                 className="Nav_link"
               >
-               تبرع الآن
+               تبرع بالمال
+              </NavLink>
+            </div>
+            <div className="Nav_icon">
+              {/* <FontAwesomeIcon icon={faQuestion} /> */}
+              <NavLink
+                to="/VolWithfood"
+                style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+                تبرع بالطعام
+              </NavLink>
+            </div>
+            <div className="Nav_icon">
+              {/* <FontAwesomeIcon icon={faQuestion} /> */}
+              <NavLink
+                to="/Existing_campaigns"
+                style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+                حملات قائمة
               </NavLink>
             </div>
             <div className="Nav_icon">

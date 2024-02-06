@@ -1,29 +1,27 @@
-.Restaurants {
-  margin-top: 3rem;
+.restaurants{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: flex-start;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 60px;
   cursor: pointer;
 }
-
-.Restaurant {
-  img {
-    border-radius: 10px;
-    width: 300px;
-  }
-}
-.Restaurant:hover {
+.restaurant:hover{
   scale: 1.1;
   transition: ease all 500ms;
 }
+.charityAndRestaurantImg{
+  border-radius: 10px;
+    width: 240px;
+}
+
 .ResImg {
   height: 200px;
 }
 .content_restaurant {
-  background-color: #0c4f70fd;
+  background-color: #ac6327 ;
   color: white;
   padding: 2rem 2rem;
   text-align: center;
