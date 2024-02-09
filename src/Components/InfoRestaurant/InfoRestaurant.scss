@@ -1,0 +1,36 @@
+.InfoCharity{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.volCharityButton{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+.singleCharityImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.Summery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 15px;
+    p{
+        color: rgb(69, 66, 66);
+        font-size: 1.2rem;
+       
+    }
+}

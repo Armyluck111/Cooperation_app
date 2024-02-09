@@ -7,7 +7,7 @@ export default function VolAnyCharity() {
     <>
       <Nav />
       <div className="col-12 volPage">
-        <div className="col-11 Charity_Header ">
+        <div className="col-11 Charity_Header volCharityHeader ">
           <h1 className="col-12">مؤسسة غيث</h1>
         </div>
 

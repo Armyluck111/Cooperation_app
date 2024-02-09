@@ -9,10 +9,29 @@
   position: absolute;
   border-radius: 10px;
 }
-.ContactInfo {
-  // #9ac1f0
+// .ContactInfo {
+//   // #9ac1f0
+//   background-color: #f0cd87 !important;
+
+//   padding: 1.5rem;
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   gap: 10px;
+//   border-radius: 10px;
+//   position: relative;
+
+//   box-shadow: 10 10 20px rgba(0, 0, 0, 0.5);
+//   .label {
+//     color: white;
+//     span {
+//       color: red;
+//     }
+//   }
+// }
+.present{
   background-color: #f0cd87 !important;
-  margin-top: 3rem;
+  margin: 0 !important;
   padding: 1.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -20,6 +39,7 @@
   gap: 10px;
   border-radius: 10px;
   position: relative;
+
 
   box-shadow: 10 10 20px rgba(0, 0, 0, 0.5);
   .label {

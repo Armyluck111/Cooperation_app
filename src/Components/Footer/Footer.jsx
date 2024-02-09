@@ -1,6 +1,7 @@
 import "./Footer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { WOW } from "wowjs";
 import {
   faXTwitter,
   faLinkedin,
@@ -12,11 +13,16 @@ import {
   faPhone,
  
 } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
 export default function Footer() {
+  useEffect(() => {
+    const wow = new WOW({ live: false });
+    wow.init();
+  });
   return (
     <div className="col-12 Footer">
-      <div className="AboutUs col-10 col-md-10 col-lg-3">
+      <div className="AboutUs col-10 col-md-10 col-lg-3 wow animate__animated animate__backInRight animate__fast">
         <h1 className="col-12">ماذا عنا ؟</h1>
         <p className="col-12">
           {" "}
@@ -31,11 +37,11 @@ export default function Footer() {
         </div>
       </div>
       <div className="lineDiv"></div>
-      <div className="FooterImg">
+      <div className="FooterImg wow animate__animated animate__backInRight animate__fast">
         <img src="./assets/Images/2.png" className="Footer_Img col-10 col-md-10 col-lg-3" />
       </div>
       <div className="lineDiv"></div>
-      <div className="Info col-10 col-md-10 col-lg-3">
+      <div className="Info col-10 col-md-10 col-lg-3 wow animate__animated animate__backInRight animate__fast">
         <h1 className="col-12">معلومات عنا</h1>
         <div className="col-12 InfoIcon">
           <FontAwesomeIcon icon={faLocationDot} className="InfoIcon"/>

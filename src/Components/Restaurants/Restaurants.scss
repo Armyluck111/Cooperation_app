@@ -5,8 +5,17 @@
   align-content: flex-start;
   justify-content: center;
   align-items: center;
-  gap: 60px;
-  cursor: pointer;
+  gap: 40px;
+ 
+  padding: 0 2rem;
+}
+.restaurant{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 .restaurant:hover{
   scale: 1.1;
@@ -17,9 +26,9 @@
     width: 240px;
 }
 
-.ResImg {
-  height: 200px;
-}
+// .ResImg {
+//   height: 200px;
+// }
 .content_restaurant {
   background-color: #ac6327 ;
   color: white;
@@ -30,5 +39,24 @@
 
   h2 {
     font-size: 1.3rem;
+  }
+}
+
+// **************************** Media Query*************************************
+
+@media only screen and (max-width: 280px) {
+  .restaurant {
+    width: 80%;
+  }
+  .content_restaurant  {
+    font-size: 1.1rem;
+  }
+  .restaurants {
+    padding: 0;
+  }
+  .charityAndRestaurantImg {
+    border-radius: 10px;
+    width: 70px !important;
+    padding-bottom: 1rem;
   }
 }

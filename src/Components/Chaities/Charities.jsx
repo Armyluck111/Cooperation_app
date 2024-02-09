@@ -1,7 +1,7 @@
 
 
 import "./Charities.scss";
-import { useNavigate,Route,routes } from "react-router-dom";
+import { useNavigate,Route,routes, Link } from "react-router-dom";
 
 
 
@@ -12,6 +12,9 @@ export default function Charities(props) {
   const navigateToVolunteer=()=>{
  navigate("/VolAnyCharity")
   };
+  const navigateToInfoCharity=()=>{
+    navigate("/InfoCharity")
+     };
   const charities = [
     {
       id: 1,
@@ -21,7 +24,7 @@ export default function Charities(props) {
     {
       id: 2,
       thumbnail: "assets/Images/Soonaa.png",
-      title: "مؤسسة صناع الخير",
+      title: "مؤسسة صناع الحياة",
     },
     {
       id: 3,
@@ -51,20 +54,22 @@ export default function Charities(props) {
     {
       id:8,
       thumbnail: "assets/Images/Bank.jpg",
-      title: "بنك الإطعام المصري",
+      title: "بنك الطعام المصري",
     },
   ];
  
   return (
     <>
-    <div className="col-12 charities" dir="rtl" onClick={navigateToVolunteer}>
-    {charities.map(function(single){
+    <div className="col-12 charities" dir="rtl">
+    {charities.map(function(charity){
       return(
-        <div key={single.id} className="col-2 charity">
-          <img src={single.thumbnail} className="charityAndRestaurantImg"/>
+        <div key={charity.id} className="col-5 col-md-3 col-lg-2 col-xl-2 charity wow animate__animated animate__backInRight animate__fast">
+          <img src={charity.thumbnail} className="charityAndRestaurantImg"/>
           <div className="col-12 content_charity">
-        <h2>{single.title}</h2>
+        <h2 className="col-12">{charity.title}</h2>
+        <Link to={`/charities/${charity.id}`} className="link">المزيد من التفاصيل</Link>
       </div>
+      
         </div>
       )
     })}

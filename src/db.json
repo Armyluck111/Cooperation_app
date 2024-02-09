@@ -11,7 +11,12 @@
       "email": "adam@gmail.com",
       "password": "password",
       "id": 2
+    },
+    {
+      "name": "Ahmed Adel",
+      "email": "ahmed12@gmail.com",
+      "password": "password",
+      "id": 3
     }
   ]
-  
 }

@@ -17,17 +17,20 @@ export default function Services() {
   };
   return (
     <>
-    <div className="Services col-12">
+    <div className="Services col-12" dir="rtl">
       <Nav />
-      <img src="./assets/Images/6.png" className=" col-12 Main_img" />
-      <div className="VolButton">
-        <button class="btn btn-primary " type="button" onClick={(e)=>setform(true)} className="serviceButton">
+      <div className="col-12 serviceImgAndButtons" dir="rtl">
+      <img src="./assets/Images/6.png" className=" col-12 ServiceImg" />
+      <div className="VolButton col-12">
+        <button class="btn btn-primary " type="button" onClick={(e)=>setform(true)} className="serviceButton wow animate__animated animate__backInUp animate__fast">
           تطوع الآن
         </button>
-        <button class="btn btn-primary " type="button" onClick={navigateToVolunteer} className="serviceButton"  >
+        <button class="btn btn-primary " type="button" onClick={navigateToVolunteer} className="serviceButton wow animate__animated animate__backInUp animate__fast"  >
           تبرع الآن
         </button>
       </div>
+      </div>
+    
       <div className="col-11 Charity_Header ">
         <h1 className="col-12">الجمعيات المتاحة</h1>
       </div>

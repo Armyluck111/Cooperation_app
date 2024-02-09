@@ -1,7 +1,19 @@
 .volPage {
-  margin-top: 2rem;
+  // margin-top: 2rem;
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.ContactInfo{
+  margin-top: 6rem !important;
+}
+.volFoodHeader{
+  margin-top: 5rem;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1067px) {
+  .volFoodHeader{
+      margin-top: 6rem !important;
+   }
 }

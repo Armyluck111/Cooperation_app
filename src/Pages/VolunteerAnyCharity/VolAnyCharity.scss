@@ -1,10 +1,21 @@
-.volPage{
-    margin-top: 2rem;
- flex-direction: row;
-    display: flex;
-   flex-wrap: wrap;
-justify-content: center;
+.volPage {
+  margin-top: 2rem;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.volCharityHeader{
+   margin-top: 5rem !important;
+}
 
-   
-  
+@media only screen and (min-width: 760px) and (max-width: 1067px) {
+  .volCharityHeader{
+      margin-top: 6rem !important;
+   }
+}
+@media only screen and (max-width: 450px){
+   .Charity_Header{
+     padding: 0 !important;
+   }
 }

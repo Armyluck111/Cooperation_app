@@ -10,16 +10,18 @@ export default function Answers(props) {
   };
   return (
     <>
-      <div className="col-12 Questions">
-        <div className="col-12 quesionWithIcon" onClick={handleDivClick}>
+      <div className="col-12 Questions ">
+        <div
+          className="col-12 quesionWithIcon  wow animate__animated animate__backInRight animate__fast"
+          onClick={handleDivClick}
+        >
           <h4>{props.question}</h4>
           <span>
             {" "}
-            <FontAwesomeIcon icon={faCaretDown} className="QuestionIcon"  />
+            <FontAwesomeIcon icon={faCaretDown} className="QuestionIcon" />
           </span>
         </div>
-        {appear?  <p className="col-12 Answer">{props.answer}</p>:""}
-      
+        {appear ? <p className="col-12 Answer">{props.answer}</p> : ""}
       </div>
     </>
   );

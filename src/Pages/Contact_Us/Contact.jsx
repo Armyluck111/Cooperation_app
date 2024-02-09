@@ -9,7 +9,7 @@ export default function VolWithfood() {
     <>
       <Nav />
       <div className="col-12 volPage">
-        <div className="col-11 Charity_Header ">
+        <div className="col-11 Charity_Header contact_Header ">
           <h1 className="col-12">مؤسسة غيث</h1>
         </div>
 <ContactUs/>

@@ -12,7 +12,7 @@
   text-align: center;
   border-radius: 20px;
   padding: 0 1rem;
-  margin-top: 3rem;
+  // margin-top: 1rem;
   h1 {
     font-size: 1.5rem;
     color: whitesmoke;
@@ -27,12 +27,17 @@
   color: whitesmoke;
   border-radius: 5px;
 }
+.VolButton{
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
 .restaurant_Header {
   background-color: #534173 !important;
   text-align: center;
   border-radius: 20px;
   padding: 0 1rem;
-  margin-top: 5rem;
+  // margin-top: 3rem;
   h1 {
     font-size: 1.3rem;
     color: whitesmoke;
@@ -40,4 +45,17 @@
     text-shadow: 3px 3px rgb(30, 30, 45);
   }
   box-shadow: 5px 5px 30px rgb(57, 38, 86);
+}
+
+.ServiceImg {
+  height: 90vh;
+}
+.serviceImgAndButtons {
+  height: auto;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .ServiceImg {
+    height: 60vh;
+  }
 }

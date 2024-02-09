@@ -30,7 +30,7 @@ export default function VolFood() {
         }}
         validationSchema={VolFoodSchema}
       >
-        <Form className="col-5 ContactInfo">
+        <Form className="col-10 col-md-8 col-lg-5 ContactInfo  wow animate__animated animate__backInRight animate__fast">
           <label className="label">
             اسم المطعم <span>*</span>
           </label>
@@ -96,7 +96,7 @@ export default function VolFood() {
           </Button>{" "}
         </Form>
       </Formik>
-      <img src="./assets/images/2.png" className="volImg" />
+      <img src="./assets/images/2.png" className="volImg  wow animate__animated animate__backInLeft animate__fast" />
       <Footer />
     </div>
   );

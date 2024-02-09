@@ -1,4 +1,4 @@
-.charities{
+.charities {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -6,28 +6,54 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  cursor: pointer;
 
+  padding: 0 2rem;
+}
+.charity {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
-.charityAndRestaurantImg{
+.charityAndRestaurantImg {
   border-radius: 10px;
-    width: 240px;
+  width: 150px !important;
+  padding-bottom: 1rem;
+}
+.charity:hover {
+  scale: 1.1;
+  transition: ease all 500ms;
+}
+.content_charity {
+  background-color: #ac6327;
+  color: white;
+  padding: 2rem 2rem;
+  text-align: center;
+  border-radius: 5rem;
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+.link {
+  color: black;
+}
+// *******************************Media Query**************************************************
+@media only screen and (max-width: 280px) {
+  .charity {
+    width: 80%;
+  }
+  .content_charity {
+    font-size: 1.1rem;
+  }
+  .charities {
+    padding: 0;
+  }
+  .charityAndRestaurantImg {
+    border-radius: 10px;
+    width: 70px !important;
     padding-bottom: 1rem;
+  }
 }
-.charity:hover{
-    scale: 1.1;
-    transition: ease all 500ms;
-}
-.content_charity{
-    background-color: #ac6327;
-    color: white;
-    padding: 2rem 2rem;
-    text-align: center;
-    border-radius: 5rem;
-    h2{
-        font-size: 1.3rem;
-    }
-}
-
-

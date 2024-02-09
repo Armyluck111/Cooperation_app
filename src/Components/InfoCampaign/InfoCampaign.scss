@@ -1,0 +1,96 @@
+.InfoCampaign{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+   
+
+}
+.campaign{
+    cursor: auto !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+   
+}
+.BackToAllCampaigns{
+    background-color: gray !important;
+    border: 0 !important;
+    cursor: pointer;
+  
+}
+.volCampaignButton{
+    background-color: #534173 ;
+    border: 0 !important;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.backIcon{
+    font-size: 1.2rem;
+    padding-right: 0.3rem;
+    cursor: pointer;
+}
+.backDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  
+}
+.VolCampaign{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;;
+    p{
+     font-size: 1.2rem;
+     margin: 0;
+    }
+   
+}
+.volCampaignButton {
+    color: #ac6327 !important;
+    border: 1px solid #f0cd87 !important;
+  }
+  .volCampaignButton:hover {
+    
+    transition: all ease 800ms;
+    background-color:#fae392  !important ;
+  }
+.cautionMessage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    p{
+        padding-right: 0.5rem;
+    }
+    .cautionIcon{
+        font-size: 1.3rem;
+    }
+   
+  
+}
+.campaign_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 290px) {
+    .campaign_img {
+      width: 100px !important;
+      height: 100px !important;
+    }
+  }

@@ -1,5 +1,5 @@
 import "./Restaurants.scss"
-import { useNavigate,Route,routes } from "react-router-dom";
+import { useNavigate,Route,routes, Link } from "react-router-dom";
 
 export default function Restaurants(props) {
   const navigate=useNavigate();
@@ -36,13 +36,14 @@ export default function Restaurants(props) {
   ]
   return (
     <>
-    <div className="col-12 restaurants" dir="rtl" onClick={navigateToRestaurant}>
-    {restaurants.map(function(single){
+    <div className="col-12 restaurants" dir="rtl">
+    {restaurants.map(function(restaurant){
       return(
-        <div key={single.id} className="col-2 restaurant">
-          <img src={single.thumbnail} className="charityAndRestaurantImg"/>
+        <div key={restaurant.id} className="col-5 col-md-3 col-lg-2 col-xl-2 restaurant wow animate__animated animate__backInRight animate__fast">
+          <img src={restaurant.thumbnail} className="charityAndRestaurantImg"/>
           <div className="col-12 content_charity">
-        <h2>{single.title}</h2>
+        <h2 className="col-12">{restaurant.title}</h2>
+        <Link to={`/restaurants/${restaurant.id}`} className="link">المزيد من التفاصيل</Link>
       </div>
         </div>
       )

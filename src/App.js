@@ -23,6 +23,8 @@ import { useRecoilState } from "recoil";
 import IsLoggedIn from "./Components/ProtectedRoutes/IsLogedIn.jsx";
 import NotLoggedIn from "./Components/ProtectedRoutes/NotLoggedIn.jsx";
 import VolWithfood from "./Pages/VolWithfood/VolWithfood.jsx";
+import InfoCharity from "./Components/InfoCharity/InfoCharity.jsx";
+import InfoRestaurant from "./Components/InfoRestaurant/InfoRestaurant.jsx";
 function App() {
   const [currentWidth, setcurrentWidth] = useRecoilState($Current_width);
   const [Sidemenue, setSidemenue] = useRecoilState($SideMenueIndex);
@@ -111,6 +113,22 @@ function App() {
               element={
                 <IsLoggedIn>
                  <InfoCampaign/>
+                </IsLoggedIn>
+              }
+            />
+              <Route
+              path="charities/:charityId"
+              element={
+                <IsLoggedIn>
+                <InfoCharity/>
+                </IsLoggedIn>
+              }
+            />
+              <Route
+              path="restaurants/:restaurantId"
+              element={
+                <IsLoggedIn>
+               <InfoRestaurant/>
                 </IsLoggedIn>
               }
             />

@@ -30,27 +30,36 @@ export default function SideMenue(){
               الأسئلة الشائعة
             </NavLink>
             <NavLink
+                to="/VolAnyCharity"
+                // style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+               تبرع بالمال
+              </NavLink>
+              <NavLink
+                to="/VolWithfood"
+                // style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+                تبرع بالطعام
+              </NavLink>
+              <NavLink
+                to="/Existing_campaigns"
+                // style={{ textDecoration: "none" }}
+                className="Nav_link"
+              >
+                حملات قائمة
+              </NavLink>
+            <NavLink
               to="/contact"
               style={{ textDecoration: "none" }}
               className="Nav_link"
             >
               {" "}
-              اتصل بنا
+               تواصل معنا
             </NavLink>
-            <NavLink
-              to="/login"
-              style={{ textDecoration: "none" }}
-              className="Nav_link"
-            >
-              الدخول
-            </NavLink>
-            <NavLink
-              to="/register"
-              style={{ textDecoration: "none" }}
-              className="Nav_link"
-            >
-              التسجيل
-            </NavLink>
+       
+         
         </div>
         </>
     )

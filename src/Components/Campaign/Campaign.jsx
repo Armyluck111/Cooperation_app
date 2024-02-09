@@ -33,11 +33,11 @@ export default function Campaign() {
     <div className="col-12 campaigns" dir="rtl">
     {campaigns.map(function(campaign){
       return(
-        <div key={campaign.id} className="col-5 campaign">
+        <div key={campaign.id} className="col-10 col-md-5 col-lg-5 campaign wow animate__animated animate__backInRight animate__fast">
 
-          <img src={campaign.thumbnail} className="campaign_img"/>
-       <h3 className='col-12'>{campaign.Name}</h3>
-       <p className='col-12'>عدد المتبرعين:{campaign.number}</p>
+          <img src={campaign.thumbnail} className="campaign_img wow animate__animated animate__backInUp animate__fast"/>
+       <h3 className='col-12  wow animate__animated animate__backInUp animate__fast'>{campaign.Name}</h3>
+       <p className='col-12  wow animate__animated animate__backInUp animate__fast'>عدد المتبرعين:{campaign.number}</p>
       <Link to={`/campaigns/${campaign.id}`}>المزيد من التفاصيل</Link>
         </div>
       )

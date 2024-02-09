@@ -7,3 +7,11 @@
     align-items: center;
     
 }
+.Existing_Header{
+    margin-top: 5rem !important;
+}
+@media only screen and (min-width: 760px) and (max-width: 1067px) {
+    .Existing_Header{
+        margin-top: 6rem !important;
+     }
+  }

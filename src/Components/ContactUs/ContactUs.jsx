@@ -27,7 +27,7 @@ export default function ContactUs(){
           }}
           validationSchema={ContactSchema}
         >
-          <Form className="col-5 ContactInfo" style={{ margin: "0" }}>
+          <Form className="col-10 col-md-8 col-lg-5 ContactInfo  wow animate__animated animate__backInRight animate__fast" style={{ margin: "0" }}>
             <label className="label">
               الإسم <span>*</span>
             </label>

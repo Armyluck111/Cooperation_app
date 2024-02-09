@@ -1,0 +1,95 @@
+.InfoCharity {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+.campaign {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.c_charity {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.volMoneyButton {
+  color: #ac6327 !important;
+  border: 1px solid #f0cd87 !important;
+}
+.volMoneyButton:hover {
+  
+  transition: all ease 800ms;
+  background-color:#fae392  !important ;
+}
+.volFoodButton{
+  color: #534173 !important;
+  border: 1px solid #534173 !important;
+}
+.volFoodButton:hover {
+ 
+  transition: all ease 800ms;
+  background-color:#755a9e  !important 
+}
+.volCharityButton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 2rem;
+}
+.singleCharityImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.Summery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+.c_Header {
+  margin-top: 2rem !important;
+}
+// .backDiv{
+//     display: flex;
+// }
+// .backIcon{
+//    margin-top: 0.5rem;
+// }
+.summeryP {
+  color: gray !important;
+}
+.backIconDiv {
+  display: flex;
+  padding: 0.5rem;
+  background-color: #f7e166;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+.backIcon {
+  color: #fff;
+}
+
+@media only screen and (max-width: 290px) {
+  .singleCharityImage {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}

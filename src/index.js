@@ -5,6 +5,7 @@ import App from './App';
 import"bootstrap/dist/css/bootstrap.css"
 import"bootstrap/dist/js/bootstrap"
 import { RecoilRoot } from 'recoil';
+import "animate.css"; 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
