@@ -25,18 +25,24 @@ import NotLoggedIn from "./Components/ProtectedRoutes/NotLoggedIn.jsx";
 import VolWithfood from "./Pages/VolWithfood/VolWithfood.jsx";
 import InfoCharity from "./Components/InfoCharity/InfoCharity.jsx";
 import InfoRestaurant from "./Components/InfoRestaurant/InfoRestaurant.jsx";
+import { useState } from "react";
+import LoaderPage from "./Pages/LoaderPage/LoaderPage.jsx";
+
+// import ClipLoader from "react-spinners/ClipLoader";
+
 function App() {
   const [currentWidth, setcurrentWidth] = useRecoilState($Current_width);
   const [Sidemenue, setSidemenue] = useRecoilState($SideMenueIndex);
   const [form, setform] = useRecoilState($Form);
+  const [loading, setLoading] = useState(true);
+
+  // Simulate loading (you can replace this with your actual loading logic)
+  setTimeout(() => {
+    setLoading(false);
+  }, 5000);
+
   const app = document.querySelector(".App");
-  // const closeForm=function closeForm(){
-  //   setform(false)
-  // }
-  // لو الابلكيشن بتاعي فيه عربي وانجليزي بعمل ريكويل ستيت
-  // const [currentLanguage,setCurrentLanguage]=useRecoilState($CurrentLanguage)
-  // dir{currentLanguage=="english"?"ltr":rtl}
-  // app.addEventListener('click',closeForm)
+
   window.addEventListener("resize", () => {
     setcurrentWidth(window.innerWidth);
   });
@@ -50,8 +56,10 @@ function App() {
           setSidemenue(false);
         }}
       >
+        <LoaderPage loading={loading} />
         <BrowserRouter>
           <Routes>
+          <Route path="/Loader" element={ <LoaderPage loading={loading} />} />
             <Route
               path="/"
               element={
@@ -60,6 +68,7 @@ function App() {
                 </IsLoggedIn>
               }
             />
+ <Route path="/Loader" element={ <LoaderPage/>} />
             <Route
               path="/services"
               element={
@@ -68,6 +77,7 @@ function App() {
                 </IsLoggedIn>
               }
             />
+ <Route path="/Loader" element={ <LoaderPage/>} />
             <Route
               path="/FAQ"
               element={
@@ -76,6 +86,7 @@ function App() {
                 </IsLoggedIn>
               }
             />
+ <Route path="/Loader" element={ <LoaderPage/>} />
             <Route
               path="/VolAnyCharity"
               element={
@@ -84,6 +95,7 @@ function App() {
                 </IsLoggedIn>
               }
             />
+
             <Route
               path="/VolWithfood"
               element={
@@ -92,6 +104,7 @@ function App() {
                 </IsLoggedIn>
               }
             />
+
             <Route
               path="/contact"
               element={
@@ -100,6 +113,7 @@ function App() {
                 </IsLoggedIn>
               }
             />
+
             <Route
               path="/Existing_campaigns"
               element={
@@ -108,39 +122,43 @@ function App() {
                 </IsLoggedIn>
               }
             />
-              <Route
+
+            <Route
               path="campaigns/:campaignId"
               element={
                 <IsLoggedIn>
-                 <InfoCampaign/>
+                  <InfoCampaign />
                 </IsLoggedIn>
               }
             />
-              <Route
+
+            <Route
               path="charities/:charityId"
               element={
                 <IsLoggedIn>
-                <InfoCharity/>
+                  <InfoCharity />
                 </IsLoggedIn>
               }
             />
-              <Route
+
+            <Route
               path="restaurants/:restaurantId"
               element={
                 <IsLoggedIn>
-               <InfoRestaurant/>
+                  <InfoRestaurant />
                 </IsLoggedIn>
               }
             />
-              <Route
+
+            <Route
               path="/Campaign"
               element={
                 <IsLoggedIn>
-               <Campaign/>
+                  <Campaign />
                 </IsLoggedIn>
               }
             />
-          
+
             <Route
               path="/register"
               element={
@@ -149,6 +167,7 @@ function App() {
                 </NotLoggedIn>
               }
             />
+
             <Route
               path="/login"
               element={
@@ -157,9 +176,11 @@ function App() {
                 </NotLoggedIn>
               }
             />
+
             <Route path="*" element={<h1>Page Not Found</h1>} />
           </Routes>
         </BrowserRouter>
+
         <ScrollToTopButton />
       </div>
     </>
