@@ -5,18 +5,6 @@
       "email": "ahmed@gmail.com",
       "password": "password",
       "id": 1
-    },
-    {
-      "name": "Adam",
-      "email": "adam@gmail.com",
-      "password": "password",
-      "id": 2
-    },
-    {
-      "name": "Ahmed Adel",
-      "email": "ahmed12@gmail.com",
-      "password": "password",
-      "id": 3
     }
   ]
 }

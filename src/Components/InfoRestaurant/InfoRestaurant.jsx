@@ -99,7 +99,7 @@ export default function InfoRestaurant() {
         
      
       </div>
-      <div className="backIconDiv">
+      <div className="restBackDiv">
       <FontAwesomeIcon icon={faArrowLeftLong} className="backIcon" onClick={navigateToAllCharities}/>
       </div>
     </div>

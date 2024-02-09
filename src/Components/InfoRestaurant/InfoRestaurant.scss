@@ -29,8 +29,29 @@
     
     gap: 15px;
     p{
-        color: rgb(69, 66, 66);
+        color: gray;
         font-size: 1.2rem;
        
     }
 }
+.restBackDiv{
+    display: flex !important;
+    padding: 0.5rem !important;
+    background-color: #f7e166 !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0.5rem !important;
+}
+
+
+@media only screen and (min-width: 1115px) {
+    .restBackDiv{
+        display: flex !important;
+        padding: 0.5rem !important;
+        background-color: #f7e166 !important;
+        position: absolute !important;
+        bottom: 0rem !important;
+        left: 1rem !important;
+    }
+  }
+  

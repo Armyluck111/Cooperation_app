@@ -8,12 +8,27 @@ import { $Form } from "../../Store/Store";
 import { useRecoilState } from "recoil";
 import PresentOrder from "../../Components/PresentOrder/PresentOrder";
 import Chart from "../../Components/Chart/Chart";
+import { useEffect, useState } from "react";
+import TitleAnimation from "../../Components/Loader/TitleAnimation";
 
 
 
 
 export default function Home() {
   const [form, setform] = useRecoilState($Form);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => {
+      clearTimeout(loadingTimeout);
+    };
+  }, []);
+  if(loading){
+    return<TitleAnimation/>
+  }
   return (
     <>
       <Nav />

@@ -3,11 +3,24 @@ import "./FAQ.scss";
 import Footer from "../../Components/Footer/Footer";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Answers from "../../Components/Answeres/Answers";
+import TitleAnimation from "../../Components/Loader/TitleAnimation";
 export default function FAQ() {
  
-  
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => {
+      clearTimeout(loadingTimeout);
+    };
+  }, []);
+  if(loading){
+    return<TitleAnimation/>
+  }
   return (
     <div className="FAQ col-12">
       <Nav />
@@ -20,14 +33,14 @@ export default function FAQ() {
           question="- ما هو هدف الموقع ؟
 "
 
-          answer="   - هدف الموقع هو توفير وسيلة للجمع بين الجمعيات الخيرية والمطاعم والتجار الذين يرغبون في التبرع بالطعام الزائد. يهدف الموقع إلى الحد من هدر الطعام وتوجيهه للأشخاص المحتاجين.
+          answer="   - هدف الموقع هو توفير وسيلة للجمع بين الجمعيات الخيرية والمطاعم والتجار الذين يرغبون في التبرع بالطعام الزائد. يهدف الموقع إلى الحد من هدر الطعام وتوجيهه للأشخاص المحتاجين.وايضا التبرع لأي جمعية خيرية متاحة علي الموقع بالطعام أو بالمال ويوجد بالموقع حملات تقام للمساهمة في الخير.
 "
         />
 
         <Answers
           question="- كيف يعمل الموقع وكيف يتم تسهيل عملية التبرع بالطعام ؟
 "
-          answer="   - يعمل الموقع عن طريق تسجيل المطاعم الراغبة في التبرع بالطعام وتحديد نوع الجهة والمنطقة التي يرغبون في تسليم الطعام إليها. يتيح الموقع للمستفيدين البحث عن الجمعيات الخيرية الموجودة في منطقتهم والتواصل معها لترتيب عملية التسليم.
+          answer="   - يعمل الموقع عن طريق تسجيل المطاعم الراغبة في التبرع بالطعام  وتحديد نوع الجهة والمنطقة التي يرغبون في تسليم الطعام إليها.مع امكانية التبرع بالمال لتلك الجمعيات. وايضا يمكن للمتطوعين بتقديم طلب وسوف يتم التواصل معهم في اقرب وقت .
 "
         />
 
@@ -69,7 +82,7 @@ export default function FAQ() {
         <Answers
           question=" هل يمكنني تحديد المنطقة التي أرغب في تسليم الطعام إليها ؟
 "
-          answer="    - نعم، يمكنك تحديد المنطقة التي ترغب في تسليم الطعام إليها عند تسجيلك على الموقع. ستكون الجمعيات الخيرية الموجودة في تلك المنطقة مهتمة بتلقي التبرعات الخاصة بك.
+          answer="    - نعم، يمكنك تحديد المنطقة التي ترغب في تسليم الطعام إليها عند تسجيلك على الموقع. .
 "
         />
       </div>

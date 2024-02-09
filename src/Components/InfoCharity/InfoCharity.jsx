@@ -1,6 +1,6 @@
 import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+
 import { Button } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -82,55 +82,73 @@ export default function InfoCharity() {
     // Handle case when campaign is not found
     return <div>charity not found.</div>;
   }
-  const { thumbnail, title,summery } = charity;
+  const { thumbnail, title, summery } = charity;
+
   return (
     <div className="col-12 InfoCharity">
-      <div className="col-11 Charity_Header c_Header  wow animate__animated animate__backInRight animate__fast " style={{ marginTop: "1rem" }}>
+      <div
+        className="col-11 Charity_Header c_Header  wow animate__animated animate__backInRight animate__fast "
+        style={{ marginTop: "1rem" }}
+      >
         <h1 className="col-12">الجمعيات المتاحة</h1>
       </div>
-      <div key={charity.id} className="col-10 campaign c_charity wow animate__animated animate__backInRight animate__fast">
-      <div className="col-10 col-md-5 col-lg-5">
+      <div
+        key={charity.id}
+        className="col-10 campaign c_charity wow animate__animated animate__backInRight animate__fast"
+      >
+        <div className="col-10 col-md-5 col-lg-5">
           <h3 className="col-12">{charity.title}</h3>
 
           <div className="col-12 volCharityButton">
-            <Button variant="outline-primary"
+            <Button
+              variant="outline-primary"
               className="volMoneyButton"
               onClick={navigateToVolAnyCharity}
             >
               تبرع بالمال
             </Button>
-            <Button variant="outline-primary" className="volFoodButton" onClick={navigateToVolWithFood}>
+            <Button
+              variant="outline-primary"
+              className="volFoodButton"
+              onClick={navigateToVolWithFood}
+            >
               تبرع بالطعام
             </Button>
           </div>
 
           <div className="col-12 backDiv">
-            <Button className=" col-5 BackToAllCampaigns" onClick={navigateToAllCharities}>
-العوده إلي كل الجمعيات
-
+            <Button
+              className=" col-5 BackToAllCampaigns"
+              onClick={navigateToAllCharities}
+            >
+              العوده إلي كل الجمعيات
             </Button>
-          
           </div>
         </div>
         <div className="col-10 col-md-5 col-lg-5">
-        <img src={charity.thumbnail} className="singleCharityImage" />
+          <img src={charity.thumbnail} className="singleCharityImage" />
         </div>
-       
-      
       </div>
       <div className="col-12 Summery">
-      <div className="col-11 Charity_Header  wow animate__animated animate__backInRight animate__fast " style={{ marginTop: "1rem" }}>
-        <h1 className="col-12">نبذه مختصرة</h1>
-      </div>
-      <div className="campaign col-10">
-      <p className="col-12 summeryP  wow animate__animated animate__backInRight animate__fast">{charity.summery}</p>
-      </div>
-       
+        <div
+          className="col-11 Charity_Header  wow animate__animated animate__backInRight animate__fast "
+          style={{ marginTop: "1rem" }}
+        >
+          <h1 className="col-12">نبذه مختصرة</h1>
+        </div>
+        <div className="campaign col-10">
+          <p className="col-12 summeryP  wow animate__animated animate__backInRight animate__fast">
+            {charity.summery}
+          </p>
+        </div>
       </div>
       <div className="backIconDiv">
-      <FontAwesomeIcon icon={faArrowLeftLong} className="backIcon" onClick={navigateToAllCharities}/>
+        <FontAwesomeIcon
+          icon={faArrowLeftLong}
+          className="backIcon"
+          onClick={navigateToAllCharities}
+        />
       </div>
-     
     </div>
   );
 }

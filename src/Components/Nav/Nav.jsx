@@ -61,11 +61,7 @@ export default function Nav() {
                 الجمعيات والمطاعم
               </NavLink>
             </div>
-            <div className="Nav_icon">
-              <NavLink to="/FAQ" className="Nav_link">
-                الأسئلة الشائعة
-              </NavLink>
-            </div>
+
             <div className="Nav_icon">
               <NavLink to="/VolAnyCharity" className="Nav_link">
                 تبرع بالمال
@@ -79,6 +75,11 @@ export default function Nav() {
             <div className="Nav_icon">
               <NavLink to="/Existing_campaigns" className="Nav_link">
                 حملات قائمة
+              </NavLink>
+            </div>
+            <div className="Nav_icon">
+              <NavLink to="/FAQ" className="Nav_link">
+                الأسئلة الشائعة
               </NavLink>
             </div>
             <div className="Nav_icon">

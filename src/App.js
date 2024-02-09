@@ -25,27 +25,34 @@ import NotLoggedIn from "./Components/ProtectedRoutes/NotLoggedIn.jsx";
 import VolWithfood from "./Pages/VolWithfood/VolWithfood.jsx";
 import InfoCharity from "./Components/InfoCharity/InfoCharity.jsx";
 import InfoRestaurant from "./Components/InfoRestaurant/InfoRestaurant.jsx";
-import { useState } from "react";
-import LoaderPage from "./Pages/LoaderPage/LoaderPage.jsx";
-
+// import { useEffect, useState } from "react";
+// import TitleAnimation from "./Components/Loader/TitleAnimation.jsx"
 // import ClipLoader from "react-spinners/ClipLoader";
 
 function App() {
   const [currentWidth, setcurrentWidth] = useRecoilState($Current_width);
   const [Sidemenue, setSidemenue] = useRecoilState($SideMenueIndex);
   const [form, setform] = useRecoilState($Form);
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  // Simulate loading (you can replace this with your actual loading logic)
-  setTimeout(() => {
-    setLoading(false);
-  }, 5000);
+  // useEffect(() => {
+  //   const loadingTimeout = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 5000);
+
+  //   return () => {
+  //     clearTimeout(loadingTimeout);
+  //   };
+  // }, []);
 
   const app = document.querySelector(".App");
 
   window.addEventListener("resize", () => {
     setcurrentWidth(window.innerWidth);
   });
+// if(loading){
+//   return<TitleAnimation/>
+// }
 
   return (
     <>
@@ -56,10 +63,8 @@ function App() {
           setSidemenue(false);
         }}
       >
-        <LoaderPage loading={loading} />
         <BrowserRouter>
           <Routes>
-          <Route path="/Loader" element={ <LoaderPage loading={loading} />} />
             <Route
               path="/"
               element={
@@ -68,7 +73,7 @@ function App() {
                 </IsLoggedIn>
               }
             />
- <Route path="/Loader" element={ <LoaderPage/>} />
+
             <Route
               path="/services"
               element={
@@ -77,7 +82,7 @@ function App() {
                 </IsLoggedIn>
               }
             />
- <Route path="/Loader" element={ <LoaderPage/>} />
+
             <Route
               path="/FAQ"
               element={
@@ -86,7 +91,7 @@ function App() {
                 </IsLoggedIn>
               }
             />
- <Route path="/Loader" element={ <LoaderPage/>} />
+
             <Route
               path="/VolAnyCharity"
               element={
@@ -186,4 +191,6 @@ function App() {
     </>
   );
 }
+ 
+
 export default App;

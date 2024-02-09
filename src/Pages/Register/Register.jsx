@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import registerSchema from '../../Schemas/registerSchema';
 import axios from "axios";
+import Swal from "sweetalert2";
 
 export default function Register() {
 
@@ -15,12 +16,22 @@ export default function Register() {
       }
     });
   }
-
+  const showSweet = (values, actions) => {
+    actions.resetForm();
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "شكرًا لتسجيلك حسابًا مع مؤسسة غيث يمكنك الآن تسجيل الدخول. ",
+      showConfirmButton: false,
+      timer: 4500,
+    });
+  };
   return (
     <div className="col-6 col-md-6 col-lg-12 registerForm">
         <h1>مرحبًا بك في مؤسسة غيث !</h1>
       {/* <img src="./assets/Images/Login4.png" className="col-12 loginImg"/> */}
        <Formik
+       onSubmit={showSweet}
       initialValues={{
         name: "",
         email: "",
@@ -28,9 +39,9 @@ export default function Register() {
         confirmPassword: "",
       }}
       validationSchema={registerSchema}
-      onSubmit={(values) => {
-        handleRegisterAccount(values)
-      }}
+      // onSubmit={(values) => {
+      //   handleRegisterAccount(values)
+      // }}
     >
       <Form className="user__form" >
       <h3>سجل حساب جديد الآن</h3>

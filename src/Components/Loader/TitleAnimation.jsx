@@ -1,19 +1,15 @@
-import React from 'react';
-import ClipLoader from 'react-spinners/ClipLoader';
+import React from "react";
+import Spinner from "react-bootstrap/Spinner";
+import "./TitleAnimation.scss";
 
 const TitleAnimation = ({ loading }) => {
   return (
-    <div>
-      {loading ? (
-        <ClipLoader
-          color="#c77e1f"
-          loading={loading}
-          size={100}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      ) : null}
+    <div className="Loader">
+      {loading ? <></> : null}
+
+      <Spinner animation="grow" variant="warning" className="circle-loader " />
     </div>
   );
 };
+
 export default TitleAnimation;
