@@ -5,19 +5,6 @@ import { useEffect, useState } from "react";
 import TitleAnimation from "../../Components/Loader/TitleAnimation";
 
 export default function VolAnyCharity() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const loadingTimeout = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-
-    return () => {
-      clearTimeout(loadingTimeout);
-    };
-  }, []);
-  if(loading){
-    return<TitleAnimation/>
-  }
   return (
     <>
       <Nav />

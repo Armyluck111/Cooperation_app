@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import registerSchema from '../../Schemas/registerSchema';
 import axios from "axios";
 import Swal from "sweetalert2";
+import TitleAnimation from "../../Components/Loader/TitleAnimation";
+import { useEffect, useState } from "react";
 
 export default function Register() {
 
@@ -26,6 +28,19 @@ export default function Register() {
       timer: 4500,
     });
   };
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => {
+      clearTimeout(loadingTimeout);
+    };
+  }, []);
+  if(loading){
+    return<TitleAnimation/>
+  }
   return (
     <div className="col-6 col-md-6 col-lg-12 registerForm">
         <h1>مرحبًا بك في مؤسسة غيث !</h1>

@@ -7,32 +7,16 @@ import { useEffect, useState } from "react";
 import Answers from "../../Components/Answeres/Answers";
 import TitleAnimation from "../../Components/Loader/TitleAnimation";
 export default function FAQ() {
- 
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const loadingTimeout = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-
-    return () => {
-      clearTimeout(loadingTimeout);
-    };
-  }, []);
-  if(loading){
-    return<TitleAnimation/>
-  }
   return (
     <div className="FAQ col-12">
       <Nav />
-      <div className="col-11 Charity_Header " style={{marginTop:"5rem"}}>
-          <h1 className="col-12">مؤسسة غيث</h1>
-        </div>
+      <div className="col-11 Charity_Header " style={{ marginTop: "5rem" }}>
+        <h1 className="col-12">مؤسسة غيث</h1>
+      </div>
       <div className="col-10 ContentFaq">
-        
         <Answers
           question="- ما هو هدف الموقع ؟
 "
-
           answer="   - هدف الموقع هو توفير وسيلة للجمع بين الجمعيات الخيرية والمطاعم والتجار الذين يرغبون في التبرع بالطعام الزائد. يهدف الموقع إلى الحد من هدر الطعام وتوجيهه للأشخاص المحتاجين.وايضا التبرع لأي جمعية خيرية متاحة علي الموقع بالطعام أو بالمال ويوجد بالموقع حملات تقام للمساهمة في الخير.
 "
         />
@@ -49,8 +33,6 @@ export default function FAQ() {
 "
           answer="   - يمكن للمطاعم والتجار وأي جهة تمتلك طعامًا زائدًا التبرع من خلال الموقع. "
         />
-
-       
 
         <Answers
           question="- هل أنا ملزم بدفع أي رسوم لاستخدام الموقع ؟

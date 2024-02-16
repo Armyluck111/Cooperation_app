@@ -1,6 +1,6 @@
 .Nav{
     // #0c6d70ea
-    background-color: #e3ca6e;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -35,11 +35,11 @@
 .Nav_link.active{
     // border-bottom: 1.2px solid  #474b4cfd;
 width: auto;
-color: black;
+color: #ac6327;
 
 }
 .Nav_link{
-color:whitesmoke;
+color:black;
 }
 // .Main_logo{
 //     width: 100px;
@@ -54,14 +54,10 @@ color:whitesmoke;
     gap: 5px;
    
 }
-// .Main_logo{
-//     width:200px;
-// }
-// @media only screen and (max-width: 767px) {
-//     .Main_logo{
-//         width:80px;
-//     }
-// }
+
+.Main_logo{
+    width: 50px;
+}
 .BarIcon{
     font-size: 1.5rem;
 }

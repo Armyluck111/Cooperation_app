@@ -16,20 +16,19 @@ export default function Carousel() {
       pagination={{ clickable: true }}
       className="Main_carousel"
     >
-       <SwiperSlide>
-        <img className="sliderImg w-100 h-100" src="/assets/Images/6.png" />
-        <div className="overlay">
-          <p className="arabic-text">تواصل وتعاون</p>
-          {/* Add more text or elements as needed */}
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <img className=" sliderImg w-100 h-100" src="/assets/Images/غيث.png" />
-      </SwiperSlide>
-
-      <SwiperSlide>
+        <SwiperSlide>
         <img className=" sliderImg w-100 h-100" src="/assets/Images/1.jpg" />
       </SwiperSlide>
+         <SwiperSlide>
+        <img className=" sliderImg w-100 h-100" src="/assets/Images/غيث.png" />
+      </SwiperSlide>
+       {/* <SwiperSlide>
+        <img className="sliderImg w-100 h-100" src="/assets/Images/6.png" />
+        
+      </SwiperSlide> */}
+   
+
+    
      
     </Swiper>
   );

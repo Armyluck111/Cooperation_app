@@ -43,10 +43,10 @@ export default function PresentOrder() {
             className="closeForm"
             onClick={(e) => setform(false)}
           />
-          <label className="label">
+          <label className="label" >
             الجهة المساهمة <span>*</span>
           </label>
-          <label>
+          <label style={{color:"blanchedalmond"}}>
             <Field
               type="radio"
               value="مطعم"
@@ -55,7 +55,7 @@ export default function PresentOrder() {
             />
             مطعم
           </label>
-          <label>
+          <label style={{color:"blanchedalmond"}}>
             <Field
               type="radio"
               value="جمعية خيرية"
@@ -64,7 +64,7 @@ export default function PresentOrder() {
             />
             جمعية خيرية
           </label>
-          <label>
+          <label style={{color:"blanchedalmond"}}>
             <Field
               type="radio"
               value="متطوع"

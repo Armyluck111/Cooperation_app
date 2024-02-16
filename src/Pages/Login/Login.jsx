@@ -6,6 +6,8 @@ import loginSchema from "../../Schemas/loginSchema";
 import axios from "axios";
 import { useRecoilState } from "recoil";
 import { authData } from "../../states/atoms/authAtom";
+import TitleAnimation from "../../Components/Loader/TitleAnimation";
+import { useEffect, useState } from "react";
 
 export default function Login() {
   const [auth, setAuth] = useRecoilState(authData);
@@ -28,7 +30,19 @@ export default function Login() {
       }
     });
   }
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
 
+    return () => {
+      clearTimeout(loadingTimeout);
+    };
+  }, []);
+  if(loading){
+    return<TitleAnimation/>
+  }
   return (
     <div className="col-6 col-md-6 col-lg-12 loginForm">
       <h1>مرحبًا بك في مؤسسة غيث !</h1>

@@ -31,7 +31,7 @@ export default function Nav() {
       {/*عملت شرط في المقاس الصغير يحط الناف كلها من غير اللينكات ويحط البار غير كده يحط الناف كلها عادي[] */}
       {currentWidth <= 767 ? (
         <div className="col-12 Nav">
-          <img src="./assets/images/4.png" className=" col-2 Main_logo" />
+          <img src="./assets/Images/logo2.png" className=" Main_logo" />
           <div className="BarIconDiv col-3">
             {" "}
             <span
@@ -47,7 +47,7 @@ export default function Nav() {
         </div>
       ) : (
         <div className="col-12 Nav">
-          <img src="./assets/Images/4.png" className="Main_logo col-1" />
+          <img src="./assets/Images/logo2.png" className="Main_logo" />
 
           <div className="Routes">
             <div className="Nav_icon">

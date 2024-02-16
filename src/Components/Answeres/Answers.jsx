@@ -15,7 +15,7 @@ export default function Answers(props) {
           className="col-12 quesionWithIcon  wow animate__animated animate__backInRight animate__fast"
           onClick={handleDivClick}
         >
-          <h4>{props.question}</h4>
+          <h4 className="question">{props.question}</h4>
           <span>
             {" "}
             <FontAwesomeIcon icon={faCaretDown} className="QuestionIcon" />

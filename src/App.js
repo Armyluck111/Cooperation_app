@@ -25,6 +25,8 @@ import NotLoggedIn from "./Components/ProtectedRoutes/NotLoggedIn.jsx";
 import VolWithfood from "./Pages/VolWithfood/VolWithfood.jsx";
 import InfoCharity from "./Components/InfoCharity/InfoCharity.jsx";
 import InfoRestaurant from "./Components/InfoRestaurant/InfoRestaurant.jsx";
+import { useEffect, useState } from "react";
+import TitleAnimation from "./Components/Loader/TitleAnimation.jsx";
 // import { useEffect, useState } from "react";
 // import TitleAnimation from "./Components/Loader/TitleAnimation.jsx"
 // import ClipLoader from "react-spinners/ClipLoader";
@@ -33,26 +35,26 @@ function App() {
   const [currentWidth, setcurrentWidth] = useRecoilState($Current_width);
   const [Sidemenue, setSidemenue] = useRecoilState($SideMenueIndex);
   const [form, setform] = useRecoilState($Form);
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const loadingTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
 
-  // useEffect(() => {
-  //   const loadingTimeout = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 5000);
-
-  //   return () => {
-  //     clearTimeout(loadingTimeout);
-  //   };
-  // }, []);
+    return () => {
+      clearTimeout(loadingTimeout);
+    };
+  }, []);
+  if(loading){
+    return<TitleAnimation/>
+  }
 
   const app = document.querySelector(".App");
 
   window.addEventListener("resize", () => {
     setcurrentWidth(window.innerWidth);
   });
-// if(loading){
-//   return<TitleAnimation/>
-// }
+
 
   return (
     <>
@@ -68,117 +70,117 @@ function App() {
             <Route
               path="/"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <Home />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="/services"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <Services />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="/FAQ"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <FAQ />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="/VolAnyCharity"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <VolAnyCharity />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="/VolWithfood"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <VolWithfood />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="/contact"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <Contact />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="/Existing_campaigns"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <Existing_campaigns />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="campaigns/:campaignId"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <InfoCampaign />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="charities/:charityId"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <InfoCharity />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="restaurants/:restaurantId"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <InfoRestaurant />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="/Campaign"
               element={
-                <IsLoggedIn>
+                // <IsLoggedIn>
                   <Campaign />
-                </IsLoggedIn>
+                // </IsLoggedIn>
               }
             />
 
             <Route
               path="/register"
               element={
-                <NotLoggedIn>
+                // <NotLoggedIn>
                   <Register />
-                </NotLoggedIn>
+                // </NotLoggedIn>
               }
             />
 
             <Route
               path="/login"
               element={
-                <NotLoggedIn>
+                // <NotLoggedIn>
                   <Login />
-                </NotLoggedIn>
+                // </NotLoggedIn>
               }
             />
 

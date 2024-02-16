@@ -7,19 +7,7 @@ import { useEffect, useState } from "react";
 
 
 export default function VolWithfood() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const loadingTimeout = setTimeout(() => {
-      setLoading(false);
-    }, 1500);
 
-    return () => {
-      clearTimeout(loadingTimeout);
-    };
-  }, []);
-  if(loading){
-    return<TitleAnimation/>
-  }
   return (
     <>
       <Nav />
