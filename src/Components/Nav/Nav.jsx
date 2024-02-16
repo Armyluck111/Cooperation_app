@@ -95,7 +95,7 @@ export default function Nav() {
             <div className="Registering">
               <div className="Nav_icon">
                 <NavLink to="/login" className="Nav_link">
-                  <Button
+                  <Button className="NavButton"
                     variant="primary"
                     style={{ backgroundColor: { color } }}
                     onClick={() => {
@@ -109,7 +109,7 @@ export default function Nav() {
 
               <div className="Nav_icon">
                 <NavLink to="/register" className="Nav_link">
-                  <Button variant="primary">إنشاء حساب </Button>
+                  <Button variant="primary" className="NavButton">إنشاء حساب </Button>
                 </NavLink>
               </div>
             </div>

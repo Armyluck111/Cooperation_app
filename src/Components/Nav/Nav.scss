@@ -1,63 +1,59 @@
-.Nav{
-    // #0c6d70ea
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
-    padding: 0.5rem 1rem;
-    font-size: 1.3rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    box-shadow: 0 0 20px rgba(0,0,0,1);
- 
-    cursor: pointer;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-  
-  
-    gap: 60px;
-    .Routes{
-        display: flex;
-        list-style: none;
-        gap: 50px;
-     
-    }
-    .Registering{
-        display: flex;
-        gap: 15px;
-    }
-}
-.Nav_link.active{
-    // border-bottom: 1.2px solid  #474b4cfd;
-width: auto;
-color: #ac6327;
+.Nav {
+  // #0c6d70ea
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
 
+  cursor: pointer;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+
+  gap: 60px;
+  .Routes {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  .Registering {
+    display: flex;
+    gap: 15px;
+  }
 }
-.Nav_link{
-color:black;
+.Nav_link.active {
+  // border-bottom: 1.2px solid  #474b4cfd;
+  width: auto;
+  color: #ac6327;
+}
+.Nav_link {
+  color: black;
 }
 // .Main_logo{
 //     width: 100px;
 // }
-.Nav_icon{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-   
+.Nav_icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
-.Main_logo{
-    width: 50px;
+.Main_logo {
+  width: 50px;
 }
-.BarIcon{
-    font-size: 1.5rem;
+.BarIcon {
+  font-size: 1.5rem;
 }
